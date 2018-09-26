@@ -1,5 +1,5 @@
 
-<h1 class = "title is-1 has-text-centered">Jordan Pectyo's Resume Site</h1> 
+<h1 class = "title is-1 has-text-centered">Jordan's Resume Site</h1> 
 <section id="introduction">
   <h2 class = "subtitle is-1 has-text-centered"> What is this for?</h2>
   <p class = "has-text-centered">To be quite honest this is just my way of toying around in Angular and making a simple demo out of each concept.
@@ -10,4 +10,24 @@
     <br> If you are looking for a better answer, just consider this a trip down memory lane back to the 90's.
     <i class="fa fa-camera-retro" aria-hidden="true"></i>
   </p>
+</section>
+<section id="example">
+  <h2 class="subtitle is-1 has-text-centered">
+    Example Section
+  </h2>
+  <div class="container">
+    <div class="box has-text-centered">
+      <p class="">
+        My formatting for most of my site will be as follows a simple little area to display some facet of my Angular
+        knowledge whether basic or not as basic. This is a simple click handler, qualifiying me for most junior development positions, and half of all management
+        positions.
+      </p>
+        <a class="button is-rounded " [ngClass]="{'is-danger': hasButtonBeenClicked}" (click)="exampleButtonClick()">
+          <span class="icon is-small">
+            <i class="fa fa-check"></i>
+          </span>
+          <span>{{buttonText}}</span>
+        </a>
+    </div>
+  </div>
 </section>
