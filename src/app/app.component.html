@@ -2,14 +2,22 @@
 <h1 class = "title is-1 has-text-centered">Jordan's Resume Site</h1> 
 <section id="introduction">
   <h2 class = "subtitle is-1 has-text-centered"> What is this for?</h2>
-  <p class = "has-text-centered">To be quite honest this is just my way of toying around in Angular and making a simple demo out of each concept.
-    <br> It saves you time to see features clearly labelled and showing what to look for, as opposed to digging for that one promise in a service call.
-  </p>
+  <div class="container">
+    <div class="box">
+      <p class = "has-text-centered">To be quite honest this is just my way of toying around in Angular and making a simple demo out of each concept.
+        <br> It saves you time to see features clearly labelled and showing what to look for, as opposed to digging for that one promise in a service call.
+      </p>
+    </div>
+  </div>
   <h2 class = "subtitle is-1 has-text-centered"> Why isn't this pretty?</h2>
-  <p class = "has-text-centered">Currently I'm only doing modest styling, otherwise I'll never complete anything here. As I get time I'll try and add images + styling.
-    <br> If you are looking for a better answer, just consider this a trip down memory lane back to the 90's.
-    <i class="fa fa-camera-retro" aria-hidden="true"></i>
-  </p>
+  <div class="container">
+    <div class="box">
+      <p class = "has-text-centered">Currently I'm only doing modest styling, otherwise I'll never complete anything here. As I get time I'll try and add images + styling.
+        <br> If you are looking for a better answer, just consider this a trip down memory lane back to the 90's.
+        <i class="fa fa-camera-retro" aria-hidden="true"></i>
+      </p>
+    </div>
+  </div>
 </section>
 <section id="example">
   <h2 class="subtitle is-1 has-text-centered">
@@ -19,7 +27,7 @@
     <div class="box has-text-centered">
       <p class="">
         My formatting for most of my site will be as follows a simple little area to display some facet of my Angular
-        knowledge whether basic or not as basic. This is a simple click handler, qualifiying me for most junior development positions, and half of all management
+        knowledge whether basic or not. This is a simple click handler, qualifiying me for most junior development positions, and half of all management
         positions.
       </p>
         <a class="button is-rounded " [ngClass]="{'is-danger': hasButtonBeenClicked}" (click)="exampleButtonClick()">
@@ -40,24 +48,26 @@
       These all use routerlinks, because routing is cool, and if I threw everything in this single component/html it wouldn't be nice. 
     </p>
   </div>
-  <div class="columns">
-    <div class="column">
-      <div class="box has-text-centered">
-        <h4 class="subtitle">Sample</h4>
-        <p>Simple little sample page</p>
-        <a routerLink="/sample" class="button is-rounded">
-          <span>Check it out!</span>
-          <span class="icon is-small">
-            <i class="fa fa-binoculars"></i>
-          </span>
-        </a>
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <div class="box has-text-centered">
+          <h4 class="subtitle">Sample</h4>
+          <p>Simple little sample page</p>
+          <a routerLink="/sample" class="button is-rounded">
+            <span>Check it out!</span>
+            <span class="icon is-small">
+              <i class="fa fa-binoculars"></i>
+            </span>
+          </a>
+        </div>
       </div>
-    </div>
-    <div class="column">
-      <div class="box"></div>
-    </div>
-    <div class="column">
-      <div class="box"></div>
+      <div class="column">
+        <div class="box"></div>
+      </div>
+      <div class="column">
+        <div class="box"></div>
+      </div>
     </div>
   </div>
 </section>
