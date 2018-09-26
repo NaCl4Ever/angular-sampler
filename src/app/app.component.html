@@ -31,3 +31,36 @@
     </div>
   </div>
 </section>
+<section id="gallery">
+  <div class ="container">
+    <h1 class="title is-1 has-text-centered">
+      Links to other examples
+    </h1>
+    <p class="has-text-centered">
+      These all use routerlinks, because routing is cool, and if I threw everything in this single component/html it wouldn't be nice. 
+    </p>
+  </div>
+  <div class="columns">
+    <div class="column">
+      <div class="box has-text-centered">
+        <h4 class="subtitle">Sample</h4>
+        <p>Simple little sample page</p>
+        <a routerLink="/sample" class="button is-rounded">
+          <span>Check it out!</span>
+          <span class="icon is-small">
+            <i class="fa fa-binoculars"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+    <div class="column">
+      <div class="box"></div>
+    </div>
+    <div class="column">
+      <div class="box"></div>
+    </div>
+  </div>
+</section>
+<div>
+<router-outlet></router-outlet>
+</div>
