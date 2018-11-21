@@ -53,23 +53,17 @@
   </div>
   <div class="container">
     <div class="columns">
-      <div class="column">
+      <div *ngFor="let link of links" class="column">
         <div class="box has-text-centered">
-          <h4 class="subtitle">Sample</h4>
-          <p>Simple little sample page</p>
-          <a routerLink="/sample" class="button is-rounded">
-            <span>Check it out!</span>
+          <h4 class="subtitle">{{link.title}}</h4>
+          <p>{{link.desc}}</p>
+          <a [routerLink]="button.link" class="button is-rounded" *ngFor="let button of link.buttons">
+            <span>{{button.text}}</span>
             <span class="icon is-small">
-              <i class="fa fa-binoculars"></i>
+              <i [ngClass]="button.iconClass"></i>
             </span>
           </a>
         </div>
-      </div>
-      <div class="column">
-        <div class="box"></div>
-      </div>
-      <div class="column">
-        <div class="box"></div>
       </div>
     </div>
   </div>

@@ -5,8 +5,23 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
-
+export class HomeComponent {
+  links = [
+    {
+      title: 'Sample',
+      desc: 'Simple little sample page',
+      buttons: [
+        {text: 'Check it out!', link: '/sample', iconClass: 'fa fa-binoculars'}
+      ]
+    },
+    {
+      title: 'Observables',
+      desc: 'Observe the magic of observables, I promise they are fun!',
+      buttons: [
+        { text: 'Observe!', link: '/observe', iconClass: 'fa fa-eye' }
+      ]
+    }
+  ];
   buttonText = 'Click Me';
   hasButtonBeenClicked = false;
   numberOfClicks = 0;

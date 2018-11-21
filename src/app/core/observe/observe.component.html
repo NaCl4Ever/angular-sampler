@@ -1,0 +1,24 @@
+<h2 class="subtitle is-1 has-text-centered">
+  Simple Intervals with a touch of pong
+</h2>
+<div class="container">
+  <div class="box has-text-centered">
+    <p class="">
+     Click to here start the observable and witness magic
+    </p>
+    <a class="button is-rounded " [ngClass]="{'is-danger': hasButtonBeenClicked}" (click)="initiateObservation()">
+      <span class="icon is-small">
+        <i class="fa fa-check"></i>
+      </span>
+      <span>Begin Observing</span>
+    </a>
+  </div>
+</div>
+
+<div class="container">
+  <div class="box has-text-centered">
+    <span class="tag" *ngFor="let text of resultText">
+      {{text}}
+    </span>
+  </div>
+</div>
